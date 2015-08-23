@@ -51,17 +51,32 @@ For more in-depth technical details, please see the [README](https://github.com/
 
 ##Description of the variables in the tidy_data.txt file
 The dataset within the tidy_data.txt file contains 180 observations of 68 variables. Given that there are 6 activities and 30 volunteers (aka subjects), there are a total of 180 observations. Each observation corresponds to the average of each variable for each activity and each subject. The 68 variables (see list below) provided are the Subject identifier (numerical value representing each of 30 volunteers), the Activity (walking, walking_upstairs, walking_downstairs, sitting, standing, laying), and 66 mean and standard deviation measures.
-The 66 mean and standard deviation measures adhere to the following naming convention that was established as part of the data cleansing process:
 
-
-Note: The course project instructions stated to extract only the measurements on the mean and standard deviation for each measurement.  I interpreted this to mean measures containing either "mean()" or "std()".  Within the raw data files, there were additional measures that contained words like MeanFreq.  However, based upon the [course community forum thread on this topic](https://class.coursera.org/getdata-031/forum/thread?thread_id=160#comment-609) I elected not include measures that did not adhere to this naming convenetion.  As such, there are only 66 mean and std measures within the tidy dataset.
+Note: The course project instructions stated to extract only the measurements on the mean and standard deviation for each measurement.  I interpreted this to mean measures containing either "mean()" or "std()".  Within the raw data files, there were additional measures that contained words like MeanFreq.  However, based upon the [course community forum thread on this topic](https://class.coursera.org/getdata-031/forum/thread?thread_id=160#comment-609) I elected not to include measures that did not adhere to this naming convention.  As such, there are only 66 mean and std measures within the tidy dataset.
 
 ###Variables 
-Naming convention description
 
-The Activity variable describes the activity the volunteer performed.  There were a total of 6 activities.
-Subject refers to the unique identifer for the volunteer.  There were a total of 30 volunteers.
+####Naming Convention for Variables:
+The 66 mean and standard deviation measures adhere to the following naming convention that was established as part of the data cleansing process.  Hypens separate each of the elements within the name of a variable (e.g. time-body-accelerometer-mean-X).  Here are the descriptions for each elementing within a variable name:
 
+| Element| Description | 
+| ------------- |:-------------| 
+| time | Time domain signal. Signal was captured at a constant rate of 50 Hz and filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise| 
+| frequency | Frequency domain signal applied via Fast Fourier Transform (FFT) |
+| body | Body acceleration signals using low pass Butterworth filter with a corner frequency of 0.3 Hz|
+| gravity  | Gravity acceleration signals using low pass Butterworth filter with a corner frequency of 0.3 Hz |
+| accelerometer | Accelerometer of the Samsung Galaxy S II smartphone.|
+| magnitude | Magnitude of the three-dimensional signals calculated using the Euclidean norm|
+| gyroscope | Grysoscope of the Samsung Galaxy S II smartphone|
+| jerk | Jerk signal. A derivation in time of body linear acceleration and angular velocity.|
+| mean | Mean value |
+| std | Standard deviation |
+| X| X-axis signal |
+| Y | Y-axis signal |
+| Z | Z-axis signal |
+
+
+####Variable List
 
 | Variable | Class | Unique Values/Levels |
 |---------|--------|:---------------------|
