@@ -37,7 +37,7 @@ The specific list of raw data files used for this project:
 | test/y_test.txt| Test labels.|
 | train/subject_train.txt, test/subject_test.txt| Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. |
 
-Note: There are additional data files in the raw dataset that were determined to be irrelevant to this course project as we only focused on the mean and standard deviation variables, and these files provided data outside of that scope.
+Note: There are additional data files contained within the Inertial Signals subfolders in the raw dataset that were determined to be irrelevant to this course project. This project is only focused on the mean and standard deviation variables, and the files within the Inertials Signals subfolder provided data outside of that scope and thus not needed.
 For even more details on the raw data set, check out: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 ##Creating the tidy datafile
@@ -71,7 +71,4 @@ Some information on the variable including:
 If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ##Sources
-Sources you used if any, otherise leave out.
-
-##Annex
-If you used any code in the codebook that had the echo=FALSE attribute post this here (make sure you set the results parameter to 'hide' as you do not want the results to show again)
+Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
