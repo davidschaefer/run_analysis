@@ -1,14 +1,16 @@
 ---
-title: "Codebook template"
-author: "Your name here"
-date: "The date here"
+title: CodeBook
+author: David Schaefer
+date: 8/23/2015
 output:
   html_document:
     keep_md: yes
 ---
 
 ## Project Description
-Short description of the project
+The purpose of this project is to demonstrate collecting, working with, and cleaning a data set. The goal is to prepare and output a tidy data set that can be utilized for analysis. The data for this project comes from the University of California at Irvine's Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (such as walking upstair, standing sitting, etc.) while carrying a waist-mounted Samsung Galaxy Smartphone with embedded inertial sensors.
+A full description of this data is available at the site where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
 ##Study design and data processing
 
