@@ -8,9 +8,8 @@ output:
 ---
 
 ## Project Description
-The purpose of this project is to demonstrate collecting, working with, and cleaning a data set. The goal is to prepare and output a tidy data set that can be utilized for analysis. The data for this project comes from the University of California at Irvine's Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (such as walking upstair, standing sitting, etc.) while carrying a waist-mounted Samsung Galaxy Smartphone with embedded inertial sensors.
-A full description of this data is available at the site where the data was obtained:
-http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+The purpose of this project is to demonstrate collecting, working with, and cleaning a data set. The goal is to prepare and output a tidy data set that can be utilized for analysis. The source data for this project comes from the University of California at Irvine's Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (such as walking upstair, standing sitting, etc.) while carrying a waist-mounted Samsung Galaxy Smartphone with embedded inertial sensors. A full description of the source data is available at the site where the data was obtained:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones. The tidy dataset output from this project can be found here: https://github.com/davidschaefer/run_analysis/blob/master/tidy_data.txt or by executing the run_analysis.R source code. 
 
 ##Study design and data processing
 
