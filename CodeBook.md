@@ -50,14 +50,16 @@ In order to clean the data several steps were taken.  The training and test data
 For more in-depth technical details, please see the [README](https://github.com/davidschaefer/run_analysis/blob/master/README.md).
 
 ##Description of the variables in the tidy_data.txt file
-The dataset within the tidy_data.txt file contains 180 observations of 68 variables. Given that there are 6 activities and 30 subjects, there are a total of 180 observations. Each observation corresponds to the average of each variable for each activity and each subject. There are 68 variables (see list below)
+The dataset within the tidy_data.txt file contains 180 observations of 68 variables. Given that there are 6 activities and 30 volunteers (aka subjects), there are a total of 180 observations. Each observation corresponds to the average of each variable for each activity and each subject. The 68 variables (see list below) provided are the Subject identifier (numerical value representing each of 30 volunteers), the Activity (walking, walking_upstairs, walking_downstairs, sitting, standing, laying), and 66 mean and standard deviation measures.
+The 66 mean and standard deviation measures adhere to the following naming convention that was established as part of the data cleansing process:
 
-Note: The course project instructions stated to extract only the measurements on the mean and standard deviation for each measurement.  Within the raw data files, there are 
+
+Note: The course project instructions stated to extract only the measurements on the mean and standard deviation for each measurement.  I interpreted this to mean measures containing either "mean()" or "std()".  Within the raw data files, there were additional measures that contained words like MeanFreq.  However, based upon the [course community forum thread on this topic](https://class.coursera.org/getdata-031/forum/thread?thread_id=160#comment-609) I elected not include measures that did not adhere to this naming convenetion.  As such, there are only 66 mean and std measures within the tidy dataset.
 
 ###Variables 
 Naming convention description
 
-Activity describes the activity the volunteer performed.  There were a total of 6 activities.
+The Activity variable describes the activity the volunteer performed.  There were a total of 6 activities.
 Subject refers to the unique identifer for the volunteer.  There were a total of 30 volunteers.
 
 
@@ -131,9 +133,6 @@ Subject refers to the unique identifer for the volunteer.  There were a total of
 | frequency-body-gyroscope-magnitude-std          | num |  -0.824 -0.961 -0.955 -0.947 -0.959 ... |
 | frequency-body-gyroscope-jerk-magnitude-mean    | num |  -0.942 -0.99 -0.984 -0.984 -0.985 ... |
 | frequency-body-gyroscope-jerk-magnitude-std     | num |  -0.933 -0.989 -0.983 -0.983 -0.983 ... |
-
-####Notes on variable 1
-If available, some additional notes on the variable not covered elsewehere. If no notes are present leave this section out.
 
 ##Sources
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
