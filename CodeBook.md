@@ -43,10 +43,11 @@ For even more details on the raw data set, check out: http://archive.ics.uci.edu
 ##Creating the tidy datafile
 
 ###Guide to create the tidy data file
-Description on how to create the tidy data file (1. download the data, ...)/
+To create the tidy data file, simply source the run_analysis.R script in R.  The script will automatically download and unzip the raw data, cleanse it, and produce the tidy data set. The tidy data set is placed in the "data/tidy_data.txt" file of your current working directory.
 
 ###Cleaning of the data
-Short, high-level description of what the cleaning script does. [link to the readme document that describes the code in greater detail]()
+In order to clean the data several steps were taken.  The training and test data were merged.  The subject and activity name fields were added. The data was filtered to only include mean and standard deviation variables. The variable labels were updated with more descriptive names, and the average of each variable for each activity and each subject was calculated.
+For more in-depth technical details, please see the [README](https://github.com/davidschaefer/run_analysis/blob/master/README.md).
 
 ##Description of the variables in the tiny_data.txt file
 General description of the file including:
