@@ -26,6 +26,7 @@ For raw dataset provided:
 - An identifier of the subject who carried out the experiment.
 
 The specific list of raw data files used for this project:
+
 | Raw Data File | Description | 
 | ------------- |:-------------| 
 | features.txt | List of all features.| 
