@@ -21,7 +21,10 @@ Output: data/tidy_data.txt
 4. The script then combines the test and training data sets using rbind and updates the column names for this combined dataset using the features dataset as labels.
 5. This combined test and training data is then merged with the subject and activity data using cbind. The script has now created a single dataset called mergedData.
 7. The script then performs a search through the list of variable names in the features data using the grepl command to extract only the mean() and std() variables.  The grepl command creates a logical vector to determine which variables to keep. It then appends two TRUE values at the end of the list to keep the Subject and Activity columns.
-8. The mergedData is then subsetted using the logical vector to c
+8. The mergedData is then subsetted using the logical vector, thus providing a single dataset containing only mean() and std() measurements.
+9. Next, the mergedData is joined with the Activity data to provide descriptive Activity names in the data set.
+10. The script then uses the gsub command to provide more descriptive variable names to the data. The naming conventions employed include spelling out abbreviations, hyphenating between words, removing redundant words (e.g. "BodyBody), and removing empty parantheses.
+11. Finally this tidy dataset is grouped by activity and subject, the mean is calculated for each variable, and the result is written out to a file entitled tidy_data.txt and placed in the "data" subdirectory. 
 
 
 For additional details, feel free to read the [code](https://github.com/davidschaefer/run_analysis/blob/master/run_analysis.R) as it is thoroughly documented.
