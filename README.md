@@ -30,4 +30,4 @@ Output: data/tidy_data.txt
 For additional details, feel free to read the [code](https://github.com/davidschaefer/run_analysis/blob/master/run_analysis.R) as it is thoroughly documented.
 
 ##How to execute the run_analysis.R script:
-To execute the script simply, simply source the run_analysis.R script in R. The script will automatically download and unzip the raw data, cleanse it, and produce the tidy data set. The tidy data set is placed in the "data/tidy_data.txt" file of your current working directory.
+To execute the script, simply source the run_analysis.R script in R. The script will automatically download and unzip the raw data, cleanse it, and produce the tidy data set. The tidy data set is placed in the "data/tidy_data.txt" file of your current working directory.
